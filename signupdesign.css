@@ -1,0 +1,108 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(to top ,  #000000, #4f535a);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.signup-box {
+  background: rgba(0, 0, 0, 0.4); /* Transparent glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.signup-box h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.signup-box p {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-size: 13px;
+  color: #ccc;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.signup-btn {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #357ABD;
+}
+
+.terms {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+.terms a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.login-text {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.login-text a {
+  color: #4a90e2;
+  text-decoration: none;
+}
