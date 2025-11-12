@@ -1,3 +1,16 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +32,12 @@
            <ul>
 
                 <li class="left"><a class="left" href="#"><img src="images/logo1.png" alt="Brand Logo" class="logo">SkillSprint</a></li>    
-                <li class="right"><a class="right"   href="#contact-us"">Contact</a></li>
-                <li class="right"><a class="right" href="products.html">Courses</a></li>
+                <li class="right"><a class="right"   href="#contact-us">Contact</a></li>
+                <li class="right"><a class="right" href="products.php">Courses</a></li>
                 
                 <li class="right"><a class="right" href="#about-us">About us</a></li>
-                <li class="right"><a class="right" href="index.html">Home</a></li>
-                <li class="right"><a class="right glass-button" href="login.html">Login</a></li>
+                <li class="right"><a class="right" href="index.php">Home</a></li>
+                <li class="right"><a class="right glass-button" href="logout.php">Log out</a></li>
                 </ul>
                 
 
@@ -132,7 +145,7 @@
                         <div class="sec-text">
                             <h1 >Igniting Tomorrow's Technology,<br>Today.</h1>
                             <p>At SkillSprint,we are pioneers crafting the next generation <br>of intelligent software.Our mission is to transform industries by <br>delivering cutting-edge, scalable solutions that drive efficency, <br>foster innovation, and secure the digital future for our partners <br> worldwide.</p>
-                        <a href="aboutus.html" class="btn2">Learn More About Us </a>
+                        <a href="#about-us" class="btn2">Learn More About Us </a>
                         </div>
                         <div class="main-image">
                             <img src="images/secmain.jpg" alt="futuristic cyber Digital Matrix Background">
@@ -142,14 +155,12 @@
         </div>
 
 
-<!-- ..........................................start about us...................................................................... -->
  <section id="about-us">
 <div class="fifthbox">
  <section class="maintxt">
                 <div class="sec-text">
                     <h1 >About Us.... <br></h1>
-                    <p>At SkillSprint, we are redefining the way people learn technology. Our mission is to make high- <br>quality, industry-relevant courses accessible to everyone — from beginners exploring coding for the first<br>time to professionals advancing their careers. We specialize in cutting-edge fields such as Artificial <br>Intelligence, Web Development, Data Science, and Cybersecurity, offering expertly designed learning paths<br> that combine real-world projects and personalized guidance. <br> Driven by innovation and a passion for education, we aim to bridge the gap between knowledge and <br> opportunity — helping learners build the skills that shape the future of technology. <br> </p>
-                   
+                    <p>At SkillSprint, we are redefining the way people learn technology. Our mission is to make high- <br>quality, industry-relevant courses accessible to everyone — from beginners exploring coding for the first<br>time to professionals advancing their careers. We specialize in cutting-edge fields such as Artificial <br>Intelligence, Web Development, Data Science, and Cybersecurity, offering expertly designed learning paths<br> that combine real-world projects and personalized guidance. <br> Driven by innovation and a passion for education, we aim to bridge the gap between knowledge and <br> opportunity — helping learners build the skills that shape the future of technology. <br> </p>   
                 </div>
                 <div class="main-image">
                     <img src="images/aboutuslogo.jpg" alt="futuristic cyber Digital Matrix Background">
@@ -161,7 +172,6 @@
 </section>
 
 
-<!--Contact us section-->
 
 <section class="contact-section" id="contact-us">
     <div class="contact-left">
